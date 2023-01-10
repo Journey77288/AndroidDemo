@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
+    <string name="str_add_content">增加条目</string>
+    <string name="str_delete_content">删除条目</string>
 </resources>

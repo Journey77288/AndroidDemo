@@ -1,4 +1,4 @@
-package com.samp.demo;
+package com.samp.demo.entity;
 
 /**
  * <pre>

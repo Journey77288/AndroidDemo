@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.samp.demo.R;
-import com.samp.demo.RecyclerSampleEntity;
+import com.samp.demo.entity.RecyclerSampleEntity;
 import com.samp.demo.adapter.RecyclerSampleAdapter;
 import com.samp.demo.utils.AppBars;
 

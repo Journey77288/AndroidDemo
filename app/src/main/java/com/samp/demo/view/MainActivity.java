@@ -2,14 +2,13 @@ package com.samp.demo.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.samp.demo.adapter.MainAdapter;
 import com.samp.demo.R;
+import com.samp.demo.adapter.MainAdapter;
 import com.samp.demo.callback.OnClickCallback;
 import com.samp.demo.utils.AppBars;
 
@@ -24,6 +23,7 @@ import java.util.List;
  * </pre>
  */
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity.class";
     private final List<String> mData = new ArrayList<>();
 
     @Override

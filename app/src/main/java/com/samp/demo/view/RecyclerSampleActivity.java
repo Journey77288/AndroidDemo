@@ -3,11 +3,11 @@ package com.samp.demo.view;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.samp.demo.R;
+import com.samp.demo.base.BaseActivity;
 import com.samp.demo.entity.RecyclerSampleEntity;
 import com.samp.demo.adapter.RecyclerSampleAdapter;
 import com.samp.demo.utils.AppBars;
@@ -22,7 +22,7 @@ import java.util.List;
  *     desc   : RecyclerView Sample
  * </pre>
  */
-public class RecyclerSampleActivity extends AppCompatActivity {
+public class RecyclerSampleActivity extends BaseActivity {
     private final String mAvatarUrl = "https://img1.baidu.com/it/u=1496908812,2074868618&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281";
     private final String mDesc = "渐渐模糊的约定 星空下流浪的你 仍然秘密的距离 温度消失的瞬间 无法触摸的明天 没有引力的世界 没有脚印的光年";
     private final List<RecyclerSampleEntity> mData = new ArrayList<>();

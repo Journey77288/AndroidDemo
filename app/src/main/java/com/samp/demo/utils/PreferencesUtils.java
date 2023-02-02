@@ -1,4 +1,4 @@
-package com.samp.demo.view;
+package com.samp.demo.utils;
 
 import static com.samp.demo.constants.Constants.PREFERENCES_DB;
 

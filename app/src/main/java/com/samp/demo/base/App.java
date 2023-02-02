@@ -2,7 +2,7 @@ package com.samp.demo.base;
 
 import android.app.Application;
 
-import com.samp.demo.view.PreferencesUtils;
+import com.samp.demo.utils.PreferencesUtils;
 
 /**
  * <pre>

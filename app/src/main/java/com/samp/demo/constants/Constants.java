@@ -11,4 +11,5 @@ public class Constants {
     public static String PREFERENCES_DB = "android_demo.db";
 
     public final static String SIGN = "sign";
+    public final static String INTENT_DATA = "data";
 }

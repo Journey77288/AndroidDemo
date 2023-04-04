@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
+    <string name="str_home">首页</string>
+    <string name="str_short_video">短视频</string>
+    <string name="str_mine">个人中心</string>
     <string name="str_add_content">增加条目</string>
     <string name="str_delete_content">删除条目</string>
 </resources>

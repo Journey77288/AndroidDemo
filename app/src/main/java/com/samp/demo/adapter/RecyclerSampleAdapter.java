@@ -1,5 +1,6 @@
 package com.samp.demo.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -28,9 +30,9 @@ import java.util.List;
 public class RecyclerSampleAdapter extends RecyclerView.Adapter<RecyclerSampleAdapter.ViewHolder> {
     private final Context mContext;
     private final List<RecyclerSampleEntity> mData;
-    private RecyclerSampleActivity mActivity;
+    private Activity mActivity;
 
-    public void setOwner(RecyclerSampleActivity activity){
+    public void setOwner(Activity activity){
         this.mActivity = activity;
     }
 

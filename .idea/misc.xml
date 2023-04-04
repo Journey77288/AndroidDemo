@@ -3,19 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_info_selected.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.187" />
         <entry key="app/src/main/res/drawable/select_item.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/selector_home.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/selector_home_tab.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/selector_home_text.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/selector_info.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/selector_info_tab.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/selector_mine.xml" value="0.187" />
         <entry key="app/src/main/res/drawable/shape.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/shape_cdcdcd.xml" value="0.187" />
         <entry key="app/src/main/res/drawable/shape_item_noselected.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/shape_item_selected.xml" value="0.255" />
         <entry key="app/src/main/res/drawable/shape_top_stroke_1dp.xml" value="0.1785" />
         <entry key="app/src/main/res/layout-v23/item_main.xml" value="0.37228260869565216" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22855701311806256" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.39311594202898553" />
+        <entry key="app/src/main/res/layout/fragment_mine.xml" value="0.39311594202898553" />
         <entry key="app/src/main/res/layout/item_main.xml" value="0.37228260869565216" />
         <entry key="app/src/main/res/layout/item_recycler_sample.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_recycler_view.xml" value="0.2453125" />
-        <entry key="app/src/main/res/layout/recycler_sample.xml" value="0.4218533886583679" />
+        <entry key="app/src/main/res/layout/recycler_sample.xml" value="0.18" />
         <entry key="app/src/main/res/layout/recycler_view_sample.xml" value="0.25" />
         <entry key="app/src/main/res/layout/view_pager_sample.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/view_tab_layout.xml" value="0.24270833333333333" />
       </map>
     </option>
   </component>

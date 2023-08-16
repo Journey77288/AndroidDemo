@@ -5,17 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.samp.demo.R;
-import com.samp.demo.adapter.MainAdapter;
 import com.samp.demo.base.BaseActivity;
 import com.samp.demo.callback.OnClickCallback;
 import com.samp.demo.mvp.base.BasePresent;
@@ -67,19 +62,14 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         AppBars.AppBarTranslucent(this);
         AppBars.StatusBarLightStyle(this);
         AppBars.NavigationBarLightStyle(this);
-        int statusHeight = AppBars.StatusBarHeight(this);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         ViewPager2 viewPager = findViewById(R.id.view_pager);
         mViewPagerAdapter = new ViewPagerAdapter(this, mFragmentList);
         viewPager.setAdapter(mViewPagerAdapter);
+        viewPager.setUserInputEnabled(false);
         new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
             tab.setCustomView(getViewAt(position));
         }).attach();
-        ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) tabLayout.getLayoutParams();
-        params.setMargins(0, statusHeight, 0, 0);
-        RecyclerView rootRv = findViewById(R.id.rv_root);
-        rootRv.setPadding(0, statusHeight, 0, 0);
-        rootRv.setLayoutManager(new GridLayoutManager(this, 3));
         OnClickCallback mOnClickCallback = position -> {
             switch (position) {
                 case 0:
@@ -89,8 +79,6 @@ public class MainActivity extends BaseActivity implements MainContract.View {
                     break;
             }
         };
-        MainAdapter mMainAdapter = new MainAdapter(this, mData, mOnClickCallback);
-        rootRv.setAdapter(mMainAdapter);
     }
 
     private View getViewAt(int position) {

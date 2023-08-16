@@ -4,7 +4,7 @@ package com.samp.demo.mvp.home.model;
  * <pre>
  *     author : Journey
  *     time   : 2023/2/24
- *     desc   :
+ *     desc   : Tab Entity
  * </pre>
  */
 public class TabEntity {

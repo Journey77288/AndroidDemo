@@ -17,13 +17,6 @@
         app:tabMode="fixed"
         app:tabRippleColor="@color/transparent" />
 
-    <View
-        android:id="@+id/view_line"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/color_30000000"
-        app:layout_constraintTop_toTopOf="@+id/tab_layout" />
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_width="match_parent"

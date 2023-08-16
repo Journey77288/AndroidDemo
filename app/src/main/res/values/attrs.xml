@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerView">
+        <attr name="banner_time" format="integer"/>
+        <attr name="banner_loop" format="boolean"/>
+        <attr name="banner_radius" format="dimension"/>
+    </declare-styleable>
+</resources>

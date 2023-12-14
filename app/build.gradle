@@ -39,4 +39,5 @@ dependencies {
     implementation 'com.readystatesoftware.systembartint:systembartint:1.0.4'
     implementation "androidx.lifecycle:lifecycle-common-java8:2.5.1"
     implementation 'com.google.android.material:material:1.8.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
 }

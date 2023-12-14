@@ -5,6 +5,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -40,10 +42,14 @@ public class BannerViewAdapter extends RecyclerView.Adapter<BannerViewAdapter.Ba
 
     @Override
     public void onBindViewHolder(BannerViewHolder holder, int position) {
+        ImageView coverIv = holder.coverIv;
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        coverIv.setLayoutParams(params);
         Glide.with(mContext)
                 .asBitmap()
                 .load(mData.get(position))
-                .into(holder.coverIv);
+                .into(coverIv);
     }
 
     @Override

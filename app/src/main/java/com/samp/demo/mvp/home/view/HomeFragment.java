@@ -115,9 +115,13 @@ public class HomeFragment extends Fragment {
                 changeIndicationView(position);
             }
         });
+        getLifecycle().addObserver(mBannerView);
     }
 
     public void changeIndicationView(int position) {
+        if (position < 0) {
+            return;
+        }
         for (int i = 0; i < mIndicationLly.getChildCount(); i++) {
             View view = mIndicationLly.getChildAt(i);
             if (view.isSelected()) {
@@ -125,23 +129,5 @@ public class HomeFragment extends Fragment {
             }
         }
         mIndicationLly.getChildAt(position).setSelected(true);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        mBannerView.startBanner();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        mBannerView.stopBanner();
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        mBannerView.stopBanner();
     }
 }

@@ -25,10 +25,11 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/banner_card_view"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="150dp"
                     android:layout_marginBottom="16dp"
-                    app:cardCornerRadius="0dp"
+                    app:cardCornerRadius="10dp"
                     app:cardElevation="0dp"
+                    android:layout_marginHorizontal="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -36,9 +37,9 @@
                         android:id="@+id/banner_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="16dp"
                         app:banner_loop="true"
                         app:banner_time="4000" />
+
                 </androidx.cardview.widget.CardView>
 
                 <LinearLayout
